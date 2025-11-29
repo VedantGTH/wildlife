@@ -1,58 +1,215 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <style>
-             *{
-                background-color: rgb(250, 250, 230);
-             }
-
-             a:hover{
-                font-size:120%;
-                border: 8px solid rgb(70, 91, 93);
-                background-color:rgb(130, 186, 186);
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Documentary - Lions & Tigers</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .facts-box {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+        
+        .conservation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .conservation-item {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 15px;
+        }
+        
+        details summary {
+            cursor: pointer;
+            font-weight: bold;
+            padding: 1rem;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .grid-layout {
+                grid-template-columns: 1fr;
+                gap: 1rem;
             }
-             
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="high">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="About.html">👤 About</a></li>
+                <li><a href="feedback.html">💬 Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        </style>
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1>🎬 Wildlife Documentary Collection</h1>
         
-    </head>
-    <body style="text-align: center;">
+        <!-- Overview Section -->
+        <section class="animal-card fade-in">
+            <h2>🌍 Explore the Wild Kingdom</h2>
+            <p class="animal-description">
+                Discover the magnificent world of big cats through our comprehensive documentary collection. 
+                From the African savannas to Asian jungles, witness the power, beauty, and survival stories of nature's apex predators.
+            </p>
+        </section>
 
-        <ul class="high">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="feedback.html">feedback</a></li>
-        </ul>
-        <h1>Documentary</h1>
-        <h2><a href="https://en.wikipedia.org/wiki/Lion">Lion</a></h2>
-        <br>
+        <!-- Lion Section -->
+        <section class="animal-card fade-in">
+            <div class="grid-layout">
+                <div>
+                    <h2><a href="https://en.wikipedia.org/wiki/Lion">🦁 Lion - King of the Jungle</a></h2>
+                    <p class="animal-description">
+                        Lions are large, social carnivores native to sub-Saharan Africa. Living in groups called prides, 
+                        they are known for their distinctive manes and powerful roars that can be heard miles away.
+                    </p>
+                    <div class="facts-box">
+                        <strong>📊 Quick Facts:</strong><br>
+                        • Population: ~20,000 in wild<br>
+                        • Status: Vulnerable<br>
+                        • Habitat: African savannas<br>
+                        • Social: Lives in prides
+                    </div>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPmW433Whmro1fkJeBZfIvutQQi4Xe2Nm82Q&s" 
+                         alt="Majestic Lion" class="animal-image">
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin: 2rem 0;">
+                <h3>🎥 Watch Documentary</h3>
+                <a href="https://www.youtube.com/watch?v=cGAfIE45VXc" class="doc-link" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_QcRJD0oeR5mO4JPXgTkSJiHRU612g-83A&s" 
+                         alt="Lion Documentary">
+                </a>
+                <p style="margin-top: 1rem; font-style: italic;">Click to watch the full Lion documentary</p>
+            </div>
+            
+            <details style="margin-top: 2rem;">
+                <summary>📚 Learn More About Lions</summary>
+                <iframe src="https://en.wikipedia.org/wiki/Lion" class="wiki-frame" title="Lion Wikipedia" style="margin-top: 1rem;"></iframe>
+            </details>
+        </section>
+
+        <hr class="section-divider">
         
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPmW433Whmro1fkJeBZfIvutQQi4Xe2Nm82Q&s" WIDTH="600" HEIGTH="400">
-         <P style="text-align: center;"><b>Lions (Panthera leo) are large, social carnivores known as the "king of the jungle." Native to sub-Saharan Africa, with a small population in India, they live in groups called prides. 
-            Male lions are known for their distinctive manes, while females do most of the hunting.
-             Lions hunt large herbivores like zebras and buffaloes, using teamwork to catch prey. They communicate through vocalizations, including their iconic roar, which can be heard miles away.
-          Lions give birth to 1-4 cubs after a 110-day gestation period. They are currently listed as "Vulnerable" due to habitat loss, human-wildlife conflict, and poaching, with fewer than 20,000 lions left in the wild.</b></P>
-          <br><br>
-            <a href="https://www.google.com/imgres?q=lion%20documentary&imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FcGAfIE45VXc%2Fmaxresdefault.jpg&imgrefurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DcGAfIE45VXc&docid=uu_sWSmaza-zgM&tbnid=Z-sfWXSD-Sr0GM&vet=12ahUKEwizlayAjrKLAxVoa_UHHabiLdEQM3oECBsQAA..i&w=1280&h=720&hcb=2&ved=2ahUKEwizlayAjrKLAxVoa_UHHabiLdEQM3oECBsQAA"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_QcRJD0oeR5mO4JPXgTkSJiHRU612g-83A&s" style="text-align: center;" ></a>
-            <br><br>
-            <iframe src="https://en.wikipedia.org/wiki/Lion" width="400" height="400" ></iframe>
-            <hr>
-            <br>
-            <h2><a href="https://en.wikipedia.org/wiki/Tiger">Tiger</a><h2>
+        <!-- Tiger Section -->
+        <section class="animal-card fade-in">
+            <div class="grid-layout">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT80GQ1NS6e8Ew4cNPENWvlT-kJTr71lHDc7A&s" 
+                         alt="Magnificent Tiger" class="animal-image">
+                </div>
+                <div>
+                    <h2><a href="https://en.wikipedia.org/wiki/Tiger">🐅 Tiger - The Striped Hunter</a></h2>
+                    <p class="animal-description">
+                        Tigers are the largest wild cats, known for their striking orange coats with black stripes. 
+                        These solitary predators are found across Asia and are excellent swimmers.
+                    </p>
+                    <div class="facts-box">
+                        <strong>📊 Quick Facts:</strong><br>
+                        • Population: ~3,900 in wild<br>
+                        • Status: Endangered<br>
+                        • Habitat: Asian forests<br>
+                        • Social: Solitary hunters
+                    </div>
+                </div>
+            </div>
             
-            <bR>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT80GQ1NS6e8Ew4cNPENWvlT-kJTr71lHDc7A&s" height="500" width="600" style="justify-content: center;"> 
-            <p style="text-align: center;">Tigers (Panthera tigris) are the largest wild cats, known for their striking orange coats with black stripes. They are solitary, carnivorous predators that primarily hunt large prey like deer and wild boar. 
-                Tigers are found in various habitats across Asia, with several subspecies, including Bengal, Siberian, and Sumatran tigers. They are strong swimmers and have a unique territorial behavior. 
-                 Tigers are endangered, with only around 3,900 remaining in the wild, primarily due to habitat loss and poaching. Conservation efforts focus on protecting their habitats and curbing illegal hunting.</p>
-
-                 <br><br>
-                <a href="https://www.google.com/imgres?q=documentary%20on%20tiger&imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDnQ21pgJ4Kc%2Fmaxresdefault.jpg&imgrefurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDnQ21pgJ4Kc&docid=YdrjN2D-gpFhgM&tbnid=BxnMwRLO11kPTM&vet=12ahUKEwib6oedoLOLAxWeS2wGHYA0BQsQM3oECBoQAA..i&w=1280&h=720&hcb=2&ved=2ahUKEwib6oedoLOLAxWeS2wGHYA0BQsQM3oECBoQAA"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT80GQ1NS6e8Ew4cNPENWvlT-kJTr71lHDc7A&s"></a>
-                
-                <br>
-                <iframe src="https://en.wikipedia.org/wiki/Tiger" width="300" height="300" style="justify-content: center;"></iframe>
-                <br><hr>
+            <div style="text-align: center; margin: 2rem 0;">
+                <h3>🎥 Watch Documentary</h3>
+                <a href="https://www.youtube.com/watch?v=DnQ21pgJ4Kc" class="doc-link" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT80GQ1NS6e8Ew4cNPENWvlT-kJTr71lHDc7A&s" 
+                         alt="Tiger Documentary">
+                </a>
+                <p style="margin-top: 1rem; font-style: italic;">Click to watch the full Tiger documentary</p>
+            </div>
             
+            <details style="margin-top: 2rem;">
+                <summary>📚 Learn More About Tigers</summary>
+                <iframe src="https://en.wikipedia.org/wiki/Tiger" class="wiki-frame" title="Tiger Wikipedia" style="margin-top: 1rem;"></iframe>
+            </details>
+        </section>
 
+        <!-- Conservation Section -->
+        <section class="animal-card fade-in">
+            <h2>🌱 Conservation Efforts</h2>
+            <div class="conservation-grid">
+                <div class="conservation-item">
+                    <h3>🛡️ Protection</h3>
+                    <p>Wildlife reserves and anti-poaching efforts</p>
+                </div>
+                <div class="conservation-item">
+                    <h3>🏠 Habitat</h3>
+                    <p>Preserving natural ecosystems and corridors</p>
+                </div>
+                <div class="conservation-item">
+                    <h3>📚 Education</h3>
+                    <p>Raising awareness through documentaries</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" onclick="scrollToTop()" title="Back to top">↑</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.querySelector('.scroll-top');
+            if (window.pageYOffset > 300) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animal-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
 </html>
